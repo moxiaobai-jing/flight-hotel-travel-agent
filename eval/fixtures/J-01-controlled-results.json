@@ -1,0 +1,17 @@
+{
+  "说明": "受控 Demo 数据，仅用于验证 J-01，不代表真实价格、库存或最低价。",
+  "resultsByCombination": {
+    "济州岛|上海|2026-10-01": {
+      "status": "completed",
+      "candidates": [
+        { "id": "sh-demo-1", "price": 888, "durationHours": 4.5 }
+      ]
+    },
+    "济州岛|杭州|2026-10-01": {
+      "status": "completed",
+      "candidates": [
+        { "id": "hz-demo-1", "price": 798, "durationHours": 5 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+version: 0.1
+environment: controlled-demo
+channel: feishu-im
+search:
+  data_source: controlled-test-data
+  flight_provider: controlled-fliggy
+  hotel_providers:
+    - rollinggo
+  hotel_query_strategy: rollinggo_only
+  max_retries_per_combination: 3
+  return_partial_results_after_timeout: true
+  candidate_display_limit: 10
+hotel:
+  default_room_count: 1
+  require_adult_count: true
+  require_check_in_and_check_out: true
+handoff:
+  provider: feizhu
+  mode: view-only
+  purchase_enabled: false
+secrets:
+  source: environment
+  write_to_workspace: false

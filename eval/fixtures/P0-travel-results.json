@@ -1,0 +1,247 @@
+{
+  "description": "旅行助手 P0 受控酒店查询结果，仅供评测注入，不属于 Runtime 规则。",
+  "demoData": true,
+  "flightResults": {
+    "status": "available",
+    "candidates": [
+      {
+        "index": 1,
+        "airline": "长龙",
+        "flightNumber": "GJ8381",
+        "price": 550,
+        "date": "2026-09-28",
+        "weekday": "周一",
+        "origin": "杭州",
+        "destination": "广州",
+        "departureTime": "06:25",
+        "arrivalTime": "08:45",
+        "flightDuration": "2小时20分",
+        "totalDuration": "2小时20分",
+        "direct": true,
+        "detailUrl": "https://example.test/flight/gj8381"
+      }
+    ]
+  },
+  "hotelResultsByProvider": {
+    "rollinggo": {
+      "示例酒店|2026-09-23|2026-09-24|1|1|same_option": {
+        "status": "available",
+        "source": "RollingGo",
+        "queriedAt": "2026-09-19 10:00",
+        "hotel": {
+          "hotelName": "示例酒店",
+          "description": "距离海滩约 1.2 公里，适合想靠近海边的行程",
+          "rating": "4.8 分",
+          "reviewSummary": "近期评价较好，卫生和交通反馈稳定"
+        },
+        "rooms": [
+          {
+            "roomName": "大床房",
+            "price": 416,
+            "bedType": "1 张大床",
+            "area": "38㎡",
+            "breakfast": "不含早餐",
+            "cancellation": "可取消",
+            "detailUrl": "https://example.test/rollinggo/example/double"
+          },
+          {
+            "roomName": "豪华小屋",
+            "price": 528,
+            "bedType": "1 张特大床",
+            "area": "45㎡",
+            "breakfast": "含早餐",
+            "cancellation": "不可取消",
+            "detailUrl": "https://example.test/rollinggo/example/cottage"
+          }
+        ]
+      },
+      "无房酒店|2026-09-23|2026-09-24|2|1|same_option": {
+        "status": "sold-out",
+        "reason": "sold-out",
+        "hotel": { "hotelName": "无房酒店" },
+        "rooms": []
+      },
+      "无法核验酒店|2026-09-23|2026-09-24|2|1|same_option": {
+        "status": "source-unconfirmed",
+        "hotel": { "hotelName": "无法核验酒店" }
+      },
+      "示例酒店|2026-09-23|2026-09-24|2|1|nearby": {
+        "status": "available",
+        "source": "RollingGo",
+        "rooms": [],
+        "alternatives": [
+          {
+            "hotelName": "附近酒店 A",
+            "distance": "0.6 公里",
+            "price": 388,
+            "detailUrl": "https://example.test/rollinggo/nearby-a"
+          }
+        ]
+      },
+      "无房酒店|2026-09-23|2026-09-24|2|1|nearby": {
+        "status": "available",
+        "source": "RollingGo",
+        "alternatives": [
+          {
+            "hotelName": "附近酒店 A",
+            "distance": "0.6 公里",
+            "price": 388,
+            "detailUrl": "https://example.test/rollinggo/nearby-a"
+          }
+        ]
+      }
+    },
+    "tourmind": {
+      "示例酒店|2026-09-23|2026-09-24|1|1|same_option": {
+        "status": "available",
+        "source": "TourMind",
+        "queriedAt": "2026-09-19 10:00",
+        "hotel": {
+          "hotelName": "示例酒店",
+          "description": "同一酒店的另一供应商报价",
+          "rating": "4.8 分",
+          "reviewSummary": "评价信息需以原始详情页为准"
+        },
+        "rooms": [
+          {
+            "roomName": "大床房",
+            "price": 399,
+            "bedType": "1 张大床",
+            "area": "38㎡",
+            "breakfast": "不含早餐",
+            "cancellation": "以详情页为准",
+            "detailUrl": "https://example.test/tourmind/example/double"
+          }
+        ]
+      },
+      "无房酒店|2026-09-23|2026-09-24|2|1|same_option": {
+        "status": "room-unavailable",
+        "reason": "no_matching_live_room",
+        "hotel": { "hotelName": "无房酒店" },
+        "rooms": []
+      },
+      "无法核验酒店|2026-09-23|2026-09-24|2|1|same_option": {
+        "status": "source-unconfirmed",
+        "hotel": { "hotelName": "无法核验酒店" }
+      },
+      "示例酒店|2026-09-23|2026-09-24|2|1|nearby": {
+        "status": "available",
+        "source": "TourMind",
+        "rooms": [],
+        "alternatives": [
+          {
+            "hotelName": "附近酒店 B",
+            "distance": "1.1 公里",
+            "price": 352,
+            "detailUrl": "https://example.test/tourmind/nearby-b"
+          }
+        ]
+      },
+      "无房酒店|2026-09-23|2026-09-24|2|1|nearby": {
+        "status": "available",
+        "source": "TourMind",
+        "alternatives": [
+          {
+            "hotelName": "附近酒店 B",
+            "distance": "1.1 公里",
+            "price": 352,
+            "detailUrl": "https://example.test/tourmind/nearby-b"
+          }
+        ]
+      }
+    }
+  },
+  "hotelResults": {
+    "示例酒店|2026-09-23|2026-09-24|1|1|same_option": {
+      "status": "available",
+      "hotel": {
+        "hotelName": "示例酒店",
+        "address": "示例地址",
+        "description": "距离海滩约 1.2 公里，适合想靠近海边的行程",
+        "rating": "4.8 分",
+        "reviewSummary": "近期评价较好，卫生和交通反馈稳定",
+        "detailUrl": "https://example.test/hotel/example"
+      },
+      "source": "受控酒店数据源",
+      "queriedAt": "2026-09-18 10:00",
+      "rooms": [
+        {
+          "roomName": "豪华房",
+          "price": 416,
+          "currency": "CNY",
+          "bedType": "1 张大床",
+          "area": "38㎡",
+          "breakfast": "不含早餐",
+          "cancellation": "可取消",
+          "detailUrl": "https://example.test/hotel/example/deluxe"
+        },
+        {
+          "roomName": "豪华小屋",
+          "price": 528,
+          "currency": "CNY",
+          "bedType": "1 张特大床",
+          "area": "45㎡",
+          "breakfast": "含早餐",
+          "cancellation": "不可取消",
+          "detailUrl": "https://example.test/hotel/example/cottage"
+        }
+      ]
+    },
+    "无房酒店|2026-09-23|2026-09-24|2|1|same_option": {
+      "status": "no-match",
+      "hotel": {
+        "hotelName": "无房酒店",
+        "detailUrl": "https://example.test/hotel/no-match"
+      },
+      "rooms": []
+    },
+    "无法核验酒店|2026-09-23|2026-09-24|2|1|same_option": {
+      "status": "source-unconfirmed",
+      "hotel": {
+        "hotelName": "无法核验酒店",
+        "detailUrl": "https://example.test/hotel/unconfirmed"
+      }
+    },
+    "示例酒店|2026-09-23|2026-09-24|2|1|nearby": {
+      "status": "available",
+      "alternatives": [
+        {
+          "hotelName": "附近酒店 A",
+          "distance": "0.6 公里",
+          "price": 388,
+          "detailUrl": "https://example.test/hotel/nearby-a"
+        },
+        {
+          "hotelName": "附近酒店 B",
+          "distance": "1.1 公里",
+          "price": 352,
+          "detailUrl": "https://example.test/hotel/nearby-b"
+        }
+      ]
+    },
+    "无房酒店|2026-09-23|2026-09-24|2|1|nearby": {
+      "status": "available",
+      "hotel": {
+        "hotelName": "无房酒店附近替代区域"
+      },
+      "alternatives": [
+        {
+          "hotelName": "附近酒店 A",
+          "distance": "0.6 公里",
+          "price": 388,
+          "detailUrl": "https://example.test/hotel/nearby-a"
+        },
+        {
+          "hotelName": "附近酒店 B",
+          "distance": "1.1 公里",
+          "price": 352,
+          "detailUrl": "https://example.test/hotel/nearby-b"
+        }
+      ]
+    },
+    "工具错误酒店|2026-09-23|2026-09-24|2|1|same_option": {
+      "status": "tool-error",
+      "error": "controlled provider timeout"
+    }
+  }
+}

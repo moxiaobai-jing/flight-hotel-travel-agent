@@ -1,0 +1,7 @@
+{
+  "说明": "受控 Demo 数据，仅用于验证官方查看链接绑定和恢复轮次，不代表真实可用链接。",
+  "candidates": [
+    { "id": "hz-1", "price": 800, "officialUrl": "https://example.test/feizhu/hz-1" },
+    { "id": "sh-1", "price": 900, "officialUrl": "https://example.test/feizhu/sh-1" }
+  ]
+}

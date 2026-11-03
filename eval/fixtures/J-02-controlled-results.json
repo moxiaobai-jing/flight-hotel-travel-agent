@@ -1,0 +1,19 @@
+{
+  "说明": "受控 Demo 数据，仅用于验证 J-02，不代表真实价格、库存或最低价。",
+  "resultsByCombination": {
+    "济州岛|上海|2026-10-01": {
+      "status": "completed",
+      "candidates": [
+        { "id": "same-flight", "price": 900, "durationHours": 4.5 },
+        { "id": "sh-2", "price": 1200, "durationHours": 4 }
+      ]
+    },
+    "济州岛|杭州|2026-10-01": {
+      "status": "completed",
+      "candidates": [
+        { "id": "same-flight", "price": 900, "durationHours": 4.5 },
+        { "id": "hz-2", "price": 800, "durationHours": 5 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "说明": "受控 Demo 数据，仅用于验证异常分类和重试范围，不代表真实航班结果。",
+  "combinations": [
+    { "id": "shanghai", "status": "completed", "retryCount": 0 },
+    { "id": "hangzhou-timeout", "status": "timeout", "retryCount": 1 },
+    { "id": "beijing-limited", "status": "rate-limited", "retryCount": 0 },
+    { "id": "nanjing-no-match", "status": "no-match", "retryCount": 0 },
+    { "id": "guangzhou-exhausted", "status": "failed", "retryCount": 3 }
+  ]
+}
